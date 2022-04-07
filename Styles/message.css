@@ -1,0 +1,25 @@
+.alert{
+    color: #ffffff;
+    font-family: "Minecraft 1.1";
+    border: transparent;
+    border-radius: 100px;
+    padding: 12px;
+    width: 400px;
+    position: relative;
+    left: 26%;
+    top: 30px;
+    padding: 20px;
+}
+
+.alert-danger {
+    background-color: #ff6491;
+}
+
+.alert-info {
+    background-color: #f081ff;
+}
+
+.alert-success {
+    background-color: #98ffac;
+}
+

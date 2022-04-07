@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Minecraft 1.1';
+    src: url('Minecraft11.woff2') format('woff2'),
+    url('Minecraft11.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: linear-gradient(to top, #ffc7d2, #fee2e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 100%;
+    background: #f099a7;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+
+}
+
+@media (max-width: 1200px) {
+    nav{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    nav{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    nav{
+        min-width: 500px;
+    }
+
+    body{
+        min-width: 500px;
+        resize: none;
+    }
+
+    .hidenavli {
+        display: none;
+    }
+
+    .hidenavli:nth-child(2){
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidenavli {
+        display: none;
+    }
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Minecraft 1.1';
+}
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+nav ul li a:hover {
+    color: #f099a7;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #f08aa0;
+    height: 1px;
+}
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+nav.fill ul li a {
+    transition: all 1s;
+}
+
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+nav.fill ul li a:hover {
+    color: #f099a7;
+    z-index: 1;
+    background-color: white;
+
+}
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    /*-webkit-animation: fill 1s forwards;*/
+    /*-moz-animation: fill 1s forwards;*/
+    opacity: 1;
+}
+
+.nav-button{
+    position: relative;
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    /*float: right;*/
+}
+
+.nav-button img{
+    width: 100%;
+    height: auto;
+}
+
+.nav-button img:hover{
+    background: rgba(255,220,234,0.4);
+    /*color: rgba(255, 255, 255, 1);*/
+    box-shadow: 0 5px 40px white;
+
+    /*box-shadow: 0 5px 20px rgba(145, 92, 182, .4);*/
+}
+
+/*.username{*/
+/*    display: inline-block;*/
+/*    color: white;*/
+/*    margin-left: auto;*/
+/*}*/
+
+.logout-button{
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-left: auto;
+}
+
+
+
+
+

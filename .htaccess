@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond $1 !^(index\.php|robots\.txt|css/|js/|images/|Fonts/)
+
+
+# Если адрес не ведёт ни на файл, ни на каталог,
+# делаем переадресацию на register.php
+
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+# захватываем url и лепим туда register.php
+# Потом сможем в GET-запросе получить путь, на который
+# надо попасть и через контроллеры это будет работать
