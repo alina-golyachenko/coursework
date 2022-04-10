@@ -7,10 +7,10 @@ $Config =
     [
         'Database' =>
         [
-            'Server' => 'db3183.mydbserver.com',
-            'Username' => 'p447491d33',
-            'Password' => '!$2sfu4owgasvR',
-            'Database' => 'usr_p447491_1'
+            'Server' => 'u-cdbr-west-02.cleardb.net',
+            'Username' => 'b176f69cb2a973',
+            'Password' => 'a8d63bcf',
+            'Database' => 'heroku_d5b543b213dc8d5'
         ],
         'RecipesCount' => 10
     ]
