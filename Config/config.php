@@ -7,11 +7,17 @@ $Config =
     [
         'Database' =>
         [
-            'Server' => 'localhost',
-            'Username' => 'root',
-            'Password' => '',
-            'Database' => 'coursework'
+            'Server' => 'db3183.mydbserver.com',
+            'Username' => 'p447491d33',
+            'Password' => '!$2sfu4owgasvR',
+            'Database' => 'usr_p447491_1'
         ],
         'RecipesCount' => 10
     ]
 ?>
+
+<!--'Server' => 'us-cdbr-east-05.cleardb.net',-->
+<!--'Username' => 'b641be45caaee0',-->
+<!--'Password' => '1a8194de',-->
+<!--'Database' => 'heroku_20f962a7fe8e644'-->
+<!--        -->

@@ -15,13 +15,14 @@ class Core
     private static $globalError = false;
     private function __construct(){
         global $Config;
-        spl_autoload_register('\Core\Core::__autoload');
+        spl_autoload_register('Core\Core::__autoload');
         self::$db = new \Core\DB(
             $Config['Database']['Server'],
             $Config['Database']['Username'],
             $Config['Database']['Password'],
             $Config['Database']['Database']
         );
+
     }
 
     /**
@@ -31,10 +32,13 @@ class Core
     public static function getInstance(){
 
         if(empty(self::$instance)){
+
             self::$instance = new Core();
+
             return self::getInstance();
         }
         else{
+
             return self::$instance;
         }
     }
@@ -45,6 +49,7 @@ class Core
 
     public function getDB()
     {
+
         return self::$db;
     }
 
